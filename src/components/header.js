@@ -5,27 +5,35 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      marginBottom: `3rem`,
+
     }}
   >
     <div
       style={{
+        display: 'flex',
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        // marginBottom: '10%',
       }}
     >
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `black`,
             textDecoration: `none`,
+            fontSize: 16, 
+      
           }}
         >
-          {siteTitle}
+         {/* {siteTitle} */}
+          
         </Link>
+        {/* <a style={fontSize:}target="_blank" href="https://dribbble.com/crypghost">art </a> */}
+        <Link style = {{fontSize:20, color: `black`, marginRight: 20}} to="/contact/">contact</Link>
+        <a style={{fontSize:20, color: 'black'}}target="_blank" href="https://dribbble.com/crypghost">art </a>
       </h1>
     </div>
   </header>
