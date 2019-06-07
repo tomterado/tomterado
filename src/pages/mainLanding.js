@@ -62,7 +62,7 @@ class MainLanding extends React.Component {
                   {/* <h3 style={styles.secondaryTitle}> product.</h3> */}
                   {/* <h3 style={styles.secondaryTitle}> front-end developer.</h3> */}
 
-                  <h3 style={styles.description}> passionate about <span style={styles.smallerTextStroke}> product design</span> and the relationship between <span style={styles.smallerTextStroke}>  tech </span> and <span style={styles.smallerTextStroke}> art.</span> </h3>
+                  <h3 style={styles.description}> passionate about <span style={styles.textStroke}> product design</span> and the relationship between <span style={styles.smallerTextStroke}>  tech </span> and <span style={styles.smallerTextStroke}> art.</span> </h3>
                   {/* <hr style={styles.shorterLine2}/> */}
                   <div style={{display: 'flex', justifyContent: 'center'}}>
                     {/* <img align="middle" src='https://ih1.redbubble.net/image.69173097.0090/ap,550x550,12x12,1,transparent,t.u1.png' /> */}
