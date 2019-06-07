@@ -101,6 +101,8 @@ class Work extends React.Component {
                               {/* <img alt= '' style={{marginBottom: 0, borderRadius: 10}}src={require('../images/blocumenta.png')} /> */}
                               <img
                                 src={this.state.blocumenta}
+                                target=""
+                                style={{marginBottom: 0,borderTopLeftRadius:8,borderTopRightRadius:8, }}
                                 onMouseEnter={() => {
                                   this.setState({
                                     blocumenta: require("../images/blocumenta.png"),
@@ -111,8 +113,10 @@ class Work extends React.Component {
                                     blocumenta: require("../images/blocumenta_bw.jpg"),
                                   })
                                 }}
-                              />
+                                onClick={() => window.open("https://www.blocumenta.org/blockathonsyd2019")}
+                              >
 
+                              </img>
                               <div style={{margin: 20}}>
                                 <h4> Blocumenta Blockathon</h4>
                                 <p> Wireframed, designed and implementated of landing page for a Blockchain Hackathon page.</p>
@@ -130,6 +134,7 @@ class Work extends React.Component {
                               {/*<img alt= '' style={{marginBottom: 0, borderRadius: 10}}src={require('../images/bondfire_bw.jpg')} />*/}
                               <img
                                 src={this.state.bondfire}
+                                style={{marginBottom: 0,borderTopLeftRadius:8,borderTopRightRadius:8, }}
                                 onMouseEnter={() => {
                                   this.setState({
                                     bondfire: require('../images/bondfire.jpg'),
@@ -140,6 +145,7 @@ class Work extends React.Component {
                                     bondfire: require("../images/bondfire_bw.jpg"),
                                   })
                                 }}
+                                onClick={() => window.open("http://www.bondfireapp.com/")}
                               />
 
 
@@ -168,6 +174,7 @@ class Work extends React.Component {
                               {/*<img alt= '' style={{marginBottom: 0, borderRadius: 10}}src={require('../images/bitfwd_bw.jpg')} />*/}
                               <img
                                 src={this.state.bitfwd}
+                                style={{marginBottom: 0,borderTopLeftRadius:8,borderTopRightRadius:8, }}
                                 onMouseEnter={() => {
                                   this.setState({
                                     bitfwd: require('../images/bitfwd.png'),
@@ -178,12 +185,14 @@ class Work extends React.Component {
                                     bitfwd: require("../images/bitfwd_bw.jpg"),
                                   })
                                 }}
+                                onClick={() => window.open("http://bitfwd.com")}
+
                               />
 
 
                               <div style={{margin: 20}}>
-                                <h4> Blocumenta Blockathon</h4>
-                                <p> Wireframed, designed and implementated of landing page for a Blockchain Hackathon page.</p>
+                                <h4> bitfwd</h4>
+                                <p> Designed and built website over Wordpress</p>
                                 <ul style={{display:'flex', marginLeft: 0}}>
                                   <li style={styles.borderlist}>  HTML</li>
                                   <li style={styles.borderlist}> CSS </li>
@@ -197,6 +206,7 @@ class Work extends React.Component {
                               {/*<img alt= '' style={{marginBottom: 0, borderRadius: 10}}src={require('../images/anjuna_bw.jpg')} />*/}
                               <img
                                 src={this.state.anjuna}
+                                style={{marginBottom: 0,borderTopLeftRadius:8,borderTopRightRadius:8, }}
                                 onMouseEnter={() => {
                                   this.setState({
                                     anjuna: require('../images/anjuna.jpg'),
@@ -207,10 +217,11 @@ class Work extends React.Component {
                                     anjuna: require("../images/anjuna_bw.jpg"),
                                   })
                                 }}
+                                onClick={() => window.open("https://www.anjuna.io/")}
                               />
                               <div style={{margin: 20}}>
                                 <h4> Anjuna Security</h4>
-                                <p> Wireframed, designed and implementated of landing page for a Blockchain Hackathon page.</p>
+                                <p> Designed and built website over SquareSpace.</p>
                                 <ul style={{display:'flex', marginLeft: 0}}>
                                   <li style={styles.borderlist}>  HTML</li>
                                   <li style={styles.borderlist}> CSS </li>

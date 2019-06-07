@@ -40,6 +40,14 @@ const styles = {
     textStroke: '2px black',
     textDecoration: 'none',
   },
+  textStroke2: {
+    color: 'white',
+    webkitTextStroke: '1px black',
+    textStroke: '1px black',
+    textDecoration: 'none',
+  },
+
+
   textStrokehover: {
 
   }
@@ -53,12 +61,13 @@ const contactPage = () => (
     <SEO title="Contact" />
     <h1 style={styles.title}> 
       check out my: <br/> 
-      <a href="https://www.w3schools.com" style={styles.textStroke}> linkedin</a>  <br/> 
-      <a href="https://www.w3schools.com" style={styles.textStroke}> dribble</a>  <br/> 
-      <a href="https://www.w3schools.com" style={styles.textStroke}> github </a>  <br/> 
-      <a href="https://www.w3schools.com" style={styles.textStroke}> twitter</a>  <br/> 
+      <a href="https://www.linkedin.com/in/tterado/" style={styles.textStroke}> linkedin</a>  <br/>
+      <a href="https://dribbble.com/crypghost" style={styles.textStroke}> dribble</a>  <br/>
+      <a href="https://github.com/tomterado" style={styles.textStroke}> github </a>  <br/>
+      <a href="https://twitter.com/tomterado" style={styles.textStroke}> twitter</a>  <br/>
      </h1> 
-    <h1 style={styles.description}> My email: tom.terado@gmail.com </h1> 
+    <h1 style={styles.description}> My email: <a href="mailto:tom.terado@gmail.com?Subject=Hello%Tom!" style={styles.textStroke2}> tom.terado@gmail.com</a>
+    </h1>
   </Layout>
 )
 

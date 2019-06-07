@@ -41,15 +41,12 @@ class MainLanding extends React.Component {
           },
           textStroke: {
             color: 'white',
-/*            textStroke: '2px black',*/
-            webkitTextStroke: '1px',
             webkitTextStrokeColor: 'black',
             '-webkit-text-stroke-color': 'black',
             '-webkit-text-stroke-width': '2px',
           },
           smallerTextStroke: {
             color: 'white',
-            webkitTextStroke: '1px black', 
             textStroke: '1px black',
             '-webkit-text-stroke-color': 'black',
             '-webkit-text-stroke-width': '1px',

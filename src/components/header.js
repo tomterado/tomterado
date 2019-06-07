@@ -32,6 +32,7 @@ const Header = ({ siteTitle }) => (
           
         </Link>
         {/* <a style={fontSize:}target="_blank" href="https://dribbble.com/crypghost">art </a> */}
+        <Link style = {{fontSize:20, color: `black`, marginRight: 20}} to="/">home</Link>
         <Link style = {{fontSize:20, color: `black`, marginRight: 20}} to="/contact/">contact</Link>
         <a style={{fontSize:20, color: 'black'}}target="_blank" href="https://dribbble.com/crypghost">art </a>
       </h1>

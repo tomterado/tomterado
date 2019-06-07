@@ -18,6 +18,7 @@ class PersonalProjects extends React.Component {
           container: {
             display: 'flex',
             justifyContent: 'space-between',
+            borderRadius: 8,
           },
           container2: {
             flex: 1,
@@ -66,7 +67,6 @@ class PersonalProjects extends React.Component {
         return (
 
             <div>
-                <hr style={styles.shorterLine}/>
                 <h3 style={styles.secondaryTitle}> personal projects</h3>
 
                 <div>
@@ -75,6 +75,7 @@ class PersonalProjects extends React.Component {
                             <div style={styles.projectItem}>
                               <img
                                 src={this.state.koala}
+                                style={{marginBottom: 0,borderTopLeftRadius:8,borderTopRightRadius:8, }}
                                 onMouseEnter={() => {
                                   this.setState({
                                     koala: require('../images/koala.jpg'),
@@ -85,6 +86,8 @@ class PersonalProjects extends React.Component {
                                     koala: require("../images/koala_bw.jpg"),
                                   })
                                 }}
+                                onClick={() => window.open("https://github.com/tomterado/accenture_hackathon")}
+
                               />
 
                               <div style={{margin: 20}}>
@@ -106,6 +109,7 @@ class PersonalProjects extends React.Component {
                               {/*<img alt= '' style={{marginBottom: 0,borderRadius: 10}} src={require('../images/bondfire.jpg')} />*/}
                               <img
                                 src={this.state.kirby}
+                                style={{marginBottom: 0,borderTopLeftRadius:8,borderTopRightRadius:8, }}
                                 onMouseEnter={() => {
                                   this.setState({
                                     kirby: require('../images/kirby.jpg'),
@@ -116,17 +120,18 @@ class PersonalProjects extends React.Component {
                                     kirby: require("../images/kirby_bw.jpg"),
                                   })
                                 }}
+                                onClick={() => window.open("https://github.com/tomterado/Pomodoro-Kirby")}
+
                               />
 
 
                               <div style={{margin: 20}}>
-                                <h4> Bondfire </h4>
-                                <p> Worked on wireframes, branding, prototyping and front-end development. Launched in June 2019.</p>
+                                <h4> Pomodoro Kirby </h4>
+                                <p> Built a Google Chrome Extension to create a Pomodoro Technique based timer.</p>
                                 <ul style={{display:'flex', marginLeft: 0}}>
                                     <li style={styles.borderlist}>  HTML</li>
                                     <li style={styles.borderlist}> CSS </li>
                                     <li style={styles.borderlist}> Javascript </li>
-                                    <li style={styles.borderlist}> React </li>
                                   </ul>
                               </div>
                             </div>
