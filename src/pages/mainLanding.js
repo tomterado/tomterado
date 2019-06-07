@@ -41,7 +41,7 @@ class MainLanding extends React.Component {
           },
           textStroke: {
             color: 'white',
-            textStroke: '2px black',
+/*            textStroke: '2px black',*/
             webkitTextStroke: '1px',
             webkitTextStrokeColor: 'black',
           },
@@ -57,7 +57,7 @@ class MainLanding extends React.Component {
 
             <div style={styles.container}>
                 <div style={{alignItems: 'center'}}>
-                  <h1 style={styles.title}> tom terado <br/> <span style={styles.textStroke}> front-end developer</span>  </h1> 
+                  <h1 style={styles.title}> tom terado <br/>  front-end developer  </h1>
                   {/* <h1 style={styles.title}> front-end developer </h1>  */}
                   {/* <h3 style={styles.secondaryTitle}> product.</h3> */}
                   {/* <h3 style={styles.secondaryTitle}> front-end developer.</h3> */}
