@@ -45,12 +45,14 @@ class MainLanding extends React.Component {
             webkitTextStroke: '1px',
             webkitTextStrokeColor: 'black',
             '-webkit-text-stroke-color': 'black',
-            '-webkit-text-stroke-width': '1px',
+            '-webkit-text-stroke-width': '2px',
           },
           smallerTextStroke: {
             color: 'white',
             webkitTextStroke: '1px black', 
-            textStroke: '1px black'
+            textStroke: '1px black',
+            '-webkit-text-stroke-color': 'black',
+            '-webkit-text-stroke-width': '1px',
           }
 
         }
@@ -59,12 +61,12 @@ class MainLanding extends React.Component {
 
             <div style={styles.container}>
                 <div style={{alignItems: 'center'}}>
-                  <h1 style={styles.title}> tom terado <br/>  front-end developer  </h1>
+                  <h1 style={styles.title}> tom terado <br/> <span style={styles.textStroke}> front-end developer </span> </h1>
                   {/* <h1 style={styles.title}> front-end developer </h1>  */}
                   {/* <h3 style={styles.secondaryTitle}> product.</h3> */}
                   {/* <h3 style={styles.secondaryTitle}> front-end developer.</h3> */}
 
-                  <h3 style={styles.description}> passionate about <span style={styles.textStroke}> product design</span> and the relationship between <span style={styles.smallerTextStroke}>  tech </span> and <span style={styles.smallerTextStroke}> art.</span> </h3>
+                  <h3 style={styles.description}> passionate about <span style={styles.smallerTextStroke}> product design</span> and the relationship between <span style={styles.smallerTextStroke}>  tech </span> and <span style={styles.smallerTextStroke}> art.</span> </h3>
                   {/* <hr style={styles.shorterLine2}/> */}
                   <div style={{display: 'flex', justifyContent: 'center'}}>
                     {/* <img align="middle" src='https://ih1.redbubble.net/image.69173097.0090/ap,550x550,12x12,1,transparent,t.u1.png' /> */}
