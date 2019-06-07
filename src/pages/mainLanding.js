@@ -41,8 +41,9 @@ class MainLanding extends React.Component {
           },
           textStroke: {
             color: 'white',
-            webkitTextStroke: '2px black', 
-            textStroke: '2px black'
+            textStroke: '2px black',
+            webkitTextStroke: '1px',
+            webkitTextStrokeColor: 'black',
           },
           smallerTextStroke: {
             color: 'white',
@@ -66,8 +67,8 @@ class MainLanding extends React.Component {
                   <div style={{display: 'flex', justifyContent: 'center'}}>
                     {/* <img align="middle" src='https://ih1.redbubble.net/image.69173097.0090/ap,550x550,12x12,1,transparent,t.u1.png' /> */}
                     {/* <img align="middle" src='https://cdn.dribbble.com/users/43342/videos/24356/comp_1.mp4' /> */}
-                    <iframe width="420" height="315"src="https://cdn.dribbble.com/users/43342/videos/24356/comp_1.mp4"> </iframe>
-                    {/* <video width="320" height="240" src="https://cdn.dribbble.com/users/43342/videos/24356/comp_1.mp4"/> */}
+                    <iframe width="400" height="300"src="https://cdn.dribbble.com/users/2528235/screenshots/6595156/goodnight_3.gif"> </iframe>
+                    {/*<video width="400" height="300" src="https://cdn.dribbble.com/users/2528235/screenshots/6595156/goodnight_3.gif"/>*/}
                   </div>
                 </div>
             </div>

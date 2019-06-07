@@ -4,6 +4,14 @@ import React from "react"
 import Image from "../components/image"
 
 class PersonalProjects extends React.Component {
+
+    state = {
+      koala: require('../images/koala_bw.jpg'),
+      kirby: require('../images/kirby_bw.jpg'),
+
+    }
+  
+
     render() {
 
         const styles = {
@@ -54,6 +62,7 @@ class PersonalProjects extends React.Component {
         },
         }
 
+
         return (
 
             <div>
@@ -64,7 +73,20 @@ class PersonalProjects extends React.Component {
                     <div style={styles.container}>
                         <div style={{display: 'flex', marginBottom: 20}}>
                             <div style={styles.projectItem}>
-                              <img alt= '' style={{marginBottom: 0,borderRadius: 10}}src={require('../images/koala.jpg')} />
+                              <img
+                                src={this.state.koala}
+                                onMouseEnter={() => {
+                                  this.setState({
+                                    koala: require('../images/koala.jpg'),
+                                  })
+                                }}
+                                onMouseOut={() => {
+                                  this.setState({
+                                    koala: require("../images/koala_bw.jpg"),
+                                  })
+                                }}
+                              />
+
                               <div style={{margin: 20}}>
                                 <h4> Koala (Accenture Hackathon)</h4>
                                 <p> Developed wireframes, design and implemented front-end connecting to Ethereum network</p>
@@ -81,7 +103,22 @@ class PersonalProjects extends React.Component {
                     <div style={styles.container}>
                         <div style={{display: 'flex', marginBottom: 20, borderRadius: 10}}>
                             <div style={styles.projectItem}>
-                              <img alt= '' style={{marginBottom: 0,borderRadius: 10}} src={require('../images/bondfire.jpg')} />
+                              {/*<img alt= '' style={{marginBottom: 0,borderRadius: 10}} src={require('../images/bondfire.jpg')} />*/}
+                              <img
+                                src={this.state.kirby}
+                                onMouseEnter={() => {
+                                  this.setState({
+                                    kirby: require('../images/kirby.jpg'),
+                                  })
+                                }}
+                                onMouseOut={() => {
+                                  this.setState({
+                                    kirby: require("../images/kirby_bw.jpg"),
+                                  })
+                                }}
+                              />
+
+
                               <div style={{margin: 20}}>
                                 <h4> Bondfire </h4>
                                 <p> Worked on wireframes, branding, prototyping and front-end development. Launched in June 2019.</p>
