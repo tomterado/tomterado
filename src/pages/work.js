@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import Image from "../components/image"
 import Radium from 'radium';
+import Col from 'react-bootstrap/Col';
+
 
 class Work extends React.Component {
 
@@ -85,10 +87,7 @@ class Work extends React.Component {
 
         }
 
-
-
         return (
-
 
 
             <div>
@@ -96,6 +95,7 @@ class Work extends React.Component {
 
                 <div>
                     <div style={styles.container}>
+                        <Col sm={12}>
                         <div style={{display: 'flex', marginBottom: 20}}>
                             <div style={styles.workItem}>
                               {/* <img alt= '' style={{marginBottom: 0, borderRadius: 10}}src={require('../images/blocumenta.png')} /> */}
@@ -127,17 +127,21 @@ class Work extends React.Component {
                               </div>
                             </div>
                         </div>
+                        </Col>
+
                     <div style={styles.container}>
-                        <div style={{display: 'flex', marginBottom: 20}}>
+                        <Col sm={12}>
+                          <div style={{ display: "flex", marginBottom: 20 }}>
+
                             <div style={styles.workItem}>
                               {/* <img alt= '' style={{marginBottom: 0, borderRadius: 10}}src={require('../images/bondfire.jpg')} /> */}
                               {/*<img alt= '' style={{marginBottom: 0, borderRadius: 10}}src={require('../images/bondfire_bw.jpg')} />*/}
                               <img
                                 src={this.state.bondfire}
-                                style={{marginBottom: 0,borderTopLeftRadius:8,borderTopRightRadius:8, }}
+                                style={{ marginBottom: 0, borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
                                 onMouseEnter={() => {
                                   this.setState({
-                                    bondfire: require('../images/bondfire.jpg'),
+                                    bondfire: require("../images/bondfire.jpg"),
                                   })
                                 }}
                                 onMouseOut={() => {
@@ -149,17 +153,18 @@ class Work extends React.Component {
                               />
 
 
-                              <div style={{margin: 20}}>
+                              <div style={{ margin: 20 }}>
                                 <h4> Bondfire </h4>
                                 <p> Wireframed and contributed to front-end development. Launched in June 2019.</p>
-                                <ul style={{display:'flex', marginLeft: 0}}>
-                                  <li style={styles.borderlist}>  CSS</li>
-                                  <li style={styles.borderlist}> Javascript </li>
-                                  <li style={styles.borderlist}> React Native </li>
+                                <ul style={{ display: "flex", marginLeft: 0 }}>
+                                  <li style={styles.borderlist}> CSS</li>
+                                  <li style={styles.borderlist}> Javascript</li>
+                                  <li style={styles.borderlist}> React Native</li>
                                 </ul>
                               </div>
                             </div>
-                        </div>
+                          </div>
+                        </Col>
 
                         </div>
 
@@ -168,6 +173,7 @@ class Work extends React.Component {
                     </div>
 
                     <div style={styles.container}>
+
                       <div style={{display: 'flex', marginBottom: 20}}>
                             <div style={styles.workItem}>
                               {/* <img alt= '' style={{marginBottom: 0, borderRadius: 10}}src={require('../images/bitfwd.png')} /> */}
@@ -200,6 +206,7 @@ class Work extends React.Component {
                               </div>
                               </div>
                       </div>
+
                       <div style={{display: 'flex', marginBottom: 20}}>
                             <div style={styles.workItem}>
                               {/* <img alt= '' style={{marginBottom: 0, borderRadius: 10}}src={require('../images/anjuna.jpg')} /> */}
