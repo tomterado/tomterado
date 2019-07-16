@@ -8,14 +8,13 @@ class MainLanding extends React.Component {
     const styles = {
       container: {
         display: "flex",
-        marginBottom: "3rem",
       },
       container2: {
         flex: 1,
       },
       title: {
         fontSize: "5em",
-        marginBottom: "3rem",
+        // marginBottom: "rem",
         textAlign: "center",
       },
       secondaryTitle: {
@@ -26,7 +25,7 @@ class MainLanding extends React.Component {
         fontSize: "2.5rem",
         lineHeight: 1.5,
         textAlign: "center",
-        marginBottom: "3rem",
+        // marginBottom: "3rem",
       },
       shorterLine: {
         width: "350px",
