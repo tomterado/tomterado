@@ -1,0 +1,194 @@
+header {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-weight: 1000;
+  line-height: 1.6;
+  /* font-family: 'Open Sans Condensed', sans-serif; */
+}
+
+h2 {
+  font-family: "Open Sans";
+  font-weight: 600;
+  line-height: 1.6;
+  /* font-family: 'Open Sans Condensed', sans-serif; */
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: 600;
+  line-height: 1.6;
+  /* font-family: 'Open Sans Condensed', sans-serif; */
+}
+
+.primary-underline {
+  text-decoration: none;
+  display: inline-block;
+  background: radial-gradient(farthest-side, #056bfa 98%, transparent 100%)
+      bottom right/5px 5px,
+    radial-gradient(farthest-side, #056bfa 98%, transparent 100%) bottom left /
+      5px 5px,
+    linear-gradient(#056bfa, #056bfa) bottom/calc(100% - 5px) 5px;
+  background-repeat: no-repeat;
+  margin-bottom: 6px;
+}
+
+.animation {
+  height: 100vh;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tLetter {
+  height: 200px;
+  position: relative;
+  left: 30%;
+  top: 20%;
+  transform: rotate(-20deg);
+}
+
+.oLetter {
+  height: 200px;
+  /* position: relative;
+  left: 60%;
+  top: 10%; */
+  /* transform: rotate(50deg); */
+}
+
+.mLetter {
+  height: 200px;
+  /* position: relative; */
+  /* left: 60%;
+  top: 10%; */
+  /* transform: rotate(50deg); */
+}
+
+span.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+.problemSolutionContainer {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.caseStudySections {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.caseStudyHeroContainer {
+  padding-top: 10rem;
+  margin-bottom: 10rem;
+  height: 50vh;
+  color: black;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  } /* The following four values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.heroContainer {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  height: 75vh;
+  color: black;
+}
+
+/* .heroContainer::after {
+  background-color: #efefef;
+  height: 360h;
+} */
+
+.projectContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px 0 rgba(26, 83, 240, 0.25) !important;
+  /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
+}
+
+.heroContainerSepartor {
+  width: 50px;
+  border-radius: 5px;
+  background: #056bfa;
+}
+
+hr {
+  border: 5px solid #056bfa;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.footerContainer {
+  margin-bottom: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.projectImages {
+  margin-top: 0rem;
+}
+
+@media only screen and (max-width: 540px) {
+  /* For mobile phones: */
+  [class*="projectImages"] {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  /* For mobile phones: */
+  [class*="heroContainer"] {
+    height: 100vh;
+  }
+}
+
+#name_loading {
+  -webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
